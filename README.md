@@ -15,7 +15,8 @@ ligue as opcoes apache e mysql
 <hr>
 pesquise no navegador
 http://localhost/phpmyadmin
-e adcione o banco de dados clicando em importar e selecione o arquivo dbalmoxarifado
+crie um banco de dados clicando em novo / SQL e use o codigo do arquivo dbalmoxarifado <br>
+e adcione o banco de dados clicando em importar e selecione o arquivo dbalmoxarifado 
 <hr>
 <hr>
 pesquise seu localhost 
