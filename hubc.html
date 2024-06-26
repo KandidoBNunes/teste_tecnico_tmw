@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(45deg, rgb(85, 0, 105), rgb(157, 0, 255));
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .box {
+            color: rgb(0, 0, 0);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 15px;
+            width: 400px;
+            margin-bottom: 20px;
+        }
+        
+        fieldset {
+            border-radius: 20px;
+            border: 3px solid rgb(204, 122, 255);
+        }
+        
+        legend {
+            border: 1px solid rgb(204, 122, 255);
+            padding: 10px;
+            text-align: center;
+            background-color: rgb(204, 122, 255);
+            border-radius: 8px;
+        }
+        
+        .labelInput {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+            color: rgb(157, 0, 255);
+        }
+        
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput {
+            top: -20px;
+            font-size: 12px;
+            color: dodgerblue;
+        }
+        
+        button {
+            background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+            width: 100%;
+            border: none;
+            padding: 25px;
+            color: white;
+            font-size: 25px;
+            cursor: pointer;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+        
+        button:hover {
+            background-image: linear-gradient(to right, rgb(0, 255, 0), rgb(0, 255, 0));
+        }
+        
+    </style>
+    <title>Login</title>
+</head>
+<body>
+    <div class="box">
+        <fieldset>
+            <legend><b>Dashboard</b></legend>
+            <button onclick="location.href='addprod.php'">Cadastrar Produto</button>
+            <button onclick="location.href='prods.php'">Visualizar Produtos</button>
+        </fieldset>
+    </div>
+</body>
+</html>
